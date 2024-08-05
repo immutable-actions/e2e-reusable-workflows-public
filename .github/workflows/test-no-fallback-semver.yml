@@ -1,0 +1,10 @@
+name: E2E No Fallback (Should fail!) 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-tests]
+  
+jobs:
+  consume-tombstoned-packages:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/test-no-fallback-semver.yml@main
