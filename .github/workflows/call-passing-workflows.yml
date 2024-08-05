@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: E2E Passing Tests
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-tests]
+  
+jobs:
+  consume-composite-actions:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-composite-actions.yml@main
+  consume-multi-dir-actions:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-multi-dir-actions.yml@main
+  consume-package-actions:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-package-actions.yml@main
+  consume-prerelease-tags:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-prerelease-tags.yml@main
+  consume-repo-actions:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-repo-actions.yml@main
+  test-splat-versioning:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/test-splat-versioning.yml@main
+  test-unactivated-package-skipped:
+    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/test-unactivated-package-skipped.yml@main
+  
+
