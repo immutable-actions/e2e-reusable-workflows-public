@@ -7,4 +7,4 @@ on:
   
 jobs:
   inaccessible:
-    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-inaccessible-actions.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-inaccessible-actions.yml@main
