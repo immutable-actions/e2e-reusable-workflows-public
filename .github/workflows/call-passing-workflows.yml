@@ -11,16 +11,16 @@ on:
   
 jobs:
   consume-composite-actions:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/consume-composite-actions.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-composite-actions.yml@main
   consume-multi-dir-actions:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/consume-multi-dir-actions.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-multi-dir-actions.yml@main
   consume-prerelease-tags:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/consume-prerelease-tags.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-prerelease-tags.yml@main
   consume-repo-actions:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/consume-repo-actions.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-repo-actions.yml@main
   test-splat-versioning:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/test-splat-versioning.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/test-splat-versioning.yml@main
   test-unactivated-package-skipped:
-    uses: immutable-actions/e2e-test-consumer-internal/.github/workflows/test-unactivated-package-skipped.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/test-unactivated-package-skipped.yml@main
   
 
