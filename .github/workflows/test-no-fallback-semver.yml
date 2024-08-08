@@ -7,4 +7,4 @@ on:
   
 jobs:
   consume-tombstoned-packages:
-    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/test-no-fallback-semver.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/test-no-fallback-semver.yml@main
