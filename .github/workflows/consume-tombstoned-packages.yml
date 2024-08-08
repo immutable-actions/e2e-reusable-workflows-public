@@ -7,4 +7,4 @@ on:
   
 jobs:
   consume-tombstoned-packages:
-    uses: immutable-actions/e2e-test-consumer-publuc/.github/workflows/consume-tombstoned-packages.yml@main
+    uses: immutable-actions/e2e-test-consumer-public/.github/workflows/consume-tombstoned-packages.yml@main
