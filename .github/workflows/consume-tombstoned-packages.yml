@@ -1,4 +1,4 @@
-name: E2E Tombstone Workflows (Should fail!) 
+name: E2E Tombstone Workflows
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -7,4 +7,4 @@ on:
   
 jobs:
   consume-tombstoned-packages:
-    uses: immutable-actions/e2e-test-consumer-private/.github/workflows/consume-tombstoned-packages.yml@main
+    uses: immutable-actions/e2e-test-consumer-publuc/.github/workflows/consume-tombstoned-packages.yml@main
